@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Fairus</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">MF</div>
+      <div class="nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#kemampuan">Kemampuan</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+
+    <!-- Beranda -->
+    <section id="beranda">
+      <h1>Haloo Saya Mohamad Fairus</h1>
+      <p>Saya Mahasiswa Sistem Informasi</p>
+      <div class="slider">
+        <img src="assets/slider/slider-1.jpg" alt="Gambar 1" />
+        <img src="assets/slider/slider-2.jpg" alt="Gambar 2" />
+        <img src="assets/slider/slider-3.jpg" alt="Gambar 3" />
+      </div>
+    </section>
+
+    <!-- Kemampuan -->
+    <section id="kemampuan">
+      <h2>KEMAMPUAN</h2>
+      <div class="kemampuan-item">
+        <img src="assets/skills/img-skills-bootstrap.png" alt="Kemampuan 1" />
+        <p>Bootstrap</p>
+      </div>
+      <div class="kemampuan-item">
+        <img src="assets/skills/img-skills-javascript.png" alt="Kemampuan 2" />
+        <p>JavaScript</p>
+      </div>
+      <div class="kemampuan-item">
+        <img src="assets/skills/img-skills-php.png" alt="Kemampuan 3" />
+        <p>PHP</p>
+      </div>
+      <div class="kemampuan-item">
+        <img src="assets/skills/img-skills-codeigniter.png" alt="Kemampuan 3" />
+        <p>CodeIgniter</p>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+      <h2>HUBUNGI SAYA</h2>
+      <div class="form-container">
+        <div class="form-input">
+          <h3>Masukkan Data</h3>
+          <form id="contact-form">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required />
+
+            <label for="tanggal-lahir">Tanggal Lahir:</label>
+            <input
+              type="date"
+              id="tanggal-lahir"
+              name="tanggal-lahir"
+              required
+            />
+
+            <label>Jenis Kelamin:</label>
+            <div>
+              <input
+                type="radio"
+                id="laki-laki"
+                name="jenis-kelamin"
+                value="laki-laki"
+                required
+              />
+              <label for="laki-laki">Laki-laki</label>
+              <input
+                type="radio"
+                id="perempuan"
+                name="jenis-kelamin"
+                value="perempuan"
+                required
+              />
+              <label for="perempuan">Perempuan</label>
+            </div>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" required></textarea>
+
+            <button type="submit">Kirim</button>
+          </form>
+        </div>
+        <div class="form-output">
+          <h3>Data Anda</h3>
+          <pre id="output"></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <span>&copy; Mohamad Fairus | 2024</span>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
